@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-
-<body>
-  <header>
+<div class="page" [style.backgroundColor]="bgColor">
+<header>
     <h1>Aliou et Zoléni TP1</h1>
-  </header>
+</header>
+<main>
   <div class="microsoft">
-    <div class="red"></div>
-    <div class="green"></div>
-    <div class="blue"></div>
-    <div class="orange"></div>
+    <div class="red" (click)="setBgColor('#F25022')"></div>
+    <div class="green" (click)="setBgColor('#80B90A')"></div>
+    <div class="blue" (click)="setBgColor('#029BE1')"></div>
+    <div class="orange" (click)="setBgColor('#F0B006')"></div>
   </div>
+</main>
   <footer>
 
-  </footer>
-</body>
-</html>
+</footer>
+</div>

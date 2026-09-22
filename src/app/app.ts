@@ -1,6 +1,4 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NgClass } from '../../node_modules/@angular/common/types/_common_module-chunk';
+import { Component } from '@angular/core';
 
 @Component({
   // imports: [RouterOutlet, NgClass],
@@ -9,5 +7,11 @@ import { NgClass } from '../../node_modules/@angular/common/types/_common_module
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('aliouzoleniTP1');
+  // protected readonly title = signal('aliouzoleniTP1');
+  public bgColor: string = "white";
+
+  public setBgColor(color: string): void {
+    this.bgColor = color
+  }
+
 }
