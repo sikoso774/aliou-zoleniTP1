@@ -1,0 +1,43 @@
+header {
+    background-color: purple;
+    height: 50px;
+    color: white;
+    text-align: center;
+  }
+
+footer {
+    background-color: orange;
+    height: 50px;
+  }
+
+.microsoft {
+    height: 400px;
+    width: 400px;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0
+}
+
+.microsoft div {
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+}
+
+.red {
+    background-color: #F25022;
+}
+
+.green {
+    background-color: #80B90A;
+}
+
+.blue {
+    background-color: #029BE1;
+}
+
+.orange {
+    background-color: #F0B006;
+}
