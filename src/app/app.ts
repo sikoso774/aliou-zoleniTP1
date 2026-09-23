@@ -1,13 +1,19 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NgClass } from '../../node_modules/@angular/common/types/_common_module-chunk';
+import { NgClass } from '@angular/common';
+import { Microsoft } from './microsoft/microsoft';
 
 @Component({
-  // imports: [RouterOutlet, NgClass],
+  imports: [RouterOutlet, NgClass, Microsoft],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
 })
-export class App {
-  protected readonly title = signal('aliouzoleniTP1');
+
+export class AppComponent {
+  bgColor: string = ''
+
+  changeColor(newColor: string) {
+    this.bgColor = newColor;
+  }
 }
