@@ -7,12 +7,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   templateUrl: './microsoft.html',
 })
 export class Microsoft {
-  @Input() colorHex: string = "";
-  @Input() cssClass: string = "";
+  @Input() color: string = "";
   @Output() colorSelected: EventEmitter<string> = new EventEmitter();
 
-  public squareClick() {
-    this.colorSelected.emit(this.colorHex);
+  public squareClick(): void {
+    this.colorSelected.emit(this.color);
   }
 }
 

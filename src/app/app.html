@@ -1,11 +1,11 @@
 <app-header></app-header>
-<main class="main-container" [style.background-color]="bgColor">
+<main class="main-container" [ngClass]="bgColor">
 
   <div class="microsoft">
-    <app-microsoft cssClass="red" colorHex="#F25022" (colorSelected)="changeColor($event)"></app-microsoft>
-    <app-microsoft cssClass="green" colorHex="#80B90A" (colorSelected)="changeColor($event)"></app-microsoft>
-    <app-microsoft cssClass="blue" colorHex="#029BE1" (colorSelected)="changeColor($event)"></app-microsoft>
-    <app-microsoft cssClass="orange" colorHex="#F0B006" (colorSelected)="changeColor($event)"></app-microsoft>
+    <app-microsoft color="red" (colorSelected)="changeColor($event)"></app-microsoft>
+    <app-microsoft color="green" (colorSelected)="changeColor($event)"></app-microsoft>
+    <app-microsoft color="blue" (colorSelected)="changeColor($event)"></app-microsoft>
+    <app-microsoft color="orange" (colorSelected)="changeColor($event)"></app-microsoft>
   </div>
 </main>
 
