@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+<app-header></app-header>
+<main class="main-container" [ngClass]="bgColor">
 
-
-<body>
-  <header>
-    <h1>Aliou et Zoléni TP1</h1>
-  </header>
   <div class="microsoft">
-    <div class="red"></div>
-    <div class="green"></div>
-    <div class="blue"></div>
-    <div class="orange"></div>
+    <app-microsoft color="red" (colorSelected)="changeColor($event)"></app-microsoft>
+    <app-microsoft color="green" (colorSelected)="changeColor($event)"></app-microsoft>
+    <app-microsoft color="blue" (colorSelected)="changeColor($event)"></app-microsoft>
+    <app-microsoft color="orange" (colorSelected)="changeColor($event)"></app-microsoft>
   </div>
-  <footer>
+</main>
 
-  </footer>
-</body>
-</html>
+<app-footer></app-footer>

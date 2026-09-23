@@ -1,43 +1,43 @@
-header {
-    background-color: purple;
-    height: 50px;
-    color: white;
-    text-align: center;
-  }
-
-footer {
-    background-color: orange;
-    height: 50px;
-  }
-
-.microsoft {
-    height: 400px;
-    width: 400px;
-    border: 1px solid;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.microsoft div {
-    height: 40px;
-    width: 40px;
-    border: 1px solid;
+.main-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .red {
-    background-color: #F25022;
+  background-color: #F25022;
 }
 
 .green {
-    background-color: #80B90A;
+  background-color: #80B90A;
 }
 
 .blue {
-    background-color: #029BE1;
+  background-color: #029BE1;
 }
 
 .orange {
-    background-color: #F0B006;
+  background-color: #F0B006;
+}
+
+.microsoft {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  border: 1px solid;
+}
+
+.microsoft div {
+  width: 100%;
+  height: 100%;
 }
