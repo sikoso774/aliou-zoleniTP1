@@ -1,8 +1,6 @@
-<header>
-  <h1>Aliou et Zoléni TP1</h1>
-</header>
-
+<app-header></app-header>
 <main class="main-container" [style.background-color]="bgColor">
+
   <div class="microsoft">
     <app-microsoft cssClass="red" colorHex="#F25022" (colorSelected)="changeColor($event)"></app-microsoft>
     <app-microsoft cssClass="green" colorHex="#80B90A" (colorSelected)="changeColor($event)"></app-microsoft>
@@ -11,4 +9,4 @@
   </div>
 </main>
 
-<footer></footer>
+<app-footer></app-footer>

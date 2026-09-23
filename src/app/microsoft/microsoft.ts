@@ -11,7 +11,7 @@ export class Microsoft {
   @Input() cssClass: string = "";
   @Output() colorSelected: EventEmitter<string> = new EventEmitter();
 
-  squareClick() {
+  public squareClick() {
     this.colorSelected.emit(this.colorHex);
   }
 }

@@ -4,16 +4,6 @@
   min-height: 100vh;
 }
 
-header {
-  background-color: purple;
-  height: 50px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 .main-container {
   flex: 1;
   display: flex;
@@ -52,7 +42,3 @@ header {
   background-color: #F0B006;
 }
 
-footer {
-  background-color: orange;
-  height: 50px;
-}
